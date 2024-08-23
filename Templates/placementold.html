@@ -1,0 +1,456 @@
+<!-- /*
+* Template Name: Learner
+* Template Author: Untree.co
+* Tempalte URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!doctype html>
+<html lang="en">
+<head>
+  {% load static %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Untree.co">
+  <link rel="shortcut icon" href="{% static 'favicon.png' %}">
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap4" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Display+Playfair:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.css' %}">
+  <link rel="stylesheet" href="{% static 'fonts/icomoon/style.css' %}">
+  <link rel="stylesheet" href="{% static 'fonts/flaticon/font/flaticon.css' %}">
+  <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+  <title>E-Learn</title>
+  <style>
+     .reg {
+
+  width: 400px;
+  height: 500px;
+  padding: 16px;
+  margin: 0 auto;
+  margin-top: 100px;
+  background-color: rgba(19, 106, 213, 0.85);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 255, 0.5);
+
+}
+.slider_section {
+  background-image: url(../images/home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  margin: 0 auto;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  height: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider_section .detail-box {
+  color: #fefdfc;
+}
+
+.slider_section .detail-box h1 {
+  color: #036f8a;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.slider_section .detail-box span {
+  color: #032129;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.slider_section .detail-box p {
+  color: #fefdfc;
+  margin-top: 25px;
+}
+
+.slider_section .detail-box .btn-box {
+  margin-top: 45px;
+}
+
+.slider_section .detail-box .btn-box .btn-1 {
+  display: inline-block;
+  padding: 12px 45px;
+  background-color: #ffff00;
+  color: #050505;
+  border-radius: 0;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.slider_section .detail-box .btn-box .btn-1:hover {
+  background-color: #e6e600;
+}
+
+.slider_section .detail-box .btn-box .btn-2 {
+  display: inline-block;
+  padding: 12px 42px;
+  background-color: #fefdfc;
+  color: #050505;
+  border-radius: 0;
+  text-transform: uppercase;
+}
+
+.slider_section .detail-box .btn-box .btn-2:hover {
+  background-color: #f8f0e9;
+}
+
+.slider_section ol.carousel-indicators {
+  margin: 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  bottom: -75px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider_section ol.carousel-indicators li {
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+  background-color: #ffff00;
+  border-radius: 100%;
+}
+
+.slider_section ol.carousel-indicators li.active {
+  background-color: transparent;
+  border: 3px solid #fefdfc;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <div class="site-mobile-menu">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+
+
+  <nav class="site-nav mb-5">
+    <div class="pb-2 top-bar mb-3">
+      <div class="container">
+        <div class="row align-items-center">
+
+          <div class="col-6 col-lg-9">
+            <a href="#" class="small mr-3"><span class="icon-question-circle-o mr-2"></span> <span class="d-none d-lg-inline-block">Have a questions?</span></a>
+            <a href="#" class="small mr-3"><span class="icon-phone mr-2"></span> <span class="d-none d-lg-inline-block">+1 (555) 123-4567</span></a>
+            <a href="#" class="small mr-3"><span class="icon-envelope mr-2"></span> <span class="d-none d-lg-inline-block">Elearn@gmail.com</span></a>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="sticky-nav js-sticky-header">
+      <div class="container position-relative">
+        <div class="site-navigation text-center">
+          <a href="index.html" class="logo menu-absolute m-0">E- LEARN<span class="text-primary">.</span></a>
+
+          <ul class="js-clone-nav d-none d-lg-inline-block site-menu" style="position:relative; left:250px;">
+            <li class="active"><a href="{% url 'user_home'  %}">Home</a></li>
+<!--            <li class="has-children">-->
+<!--              <a href="#">Dropdown</a>-->
+<!--              <ul class="dropdown">-->
+<!--                <li><a href="elements.html">Elements</a></li>-->
+<!--                <li class="has-children">-->
+<!--                  <a href="#">Menu Two</a>-->
+<!--                  <ul class="dropdown">-->
+<!--                    <li><a href="#">Sub Menu One</a></li>-->
+<!--                    <li><a href="#">Sub Menu Two</a></li>-->
+<!--                    <li><a href="#">Sub Menu Three</a></li>-->
+<!--                  </ul>-->
+<!--                </li>-->
+<!--                <li><a href="#">Menu Three</a></li>-->
+<!--              </ul>-->
+<!--            </li>-->
+            <li><a onclick="scrollToCourseSection()">Courses</a></li>
+
+            <li><a onclick="scrollToContactSection()">Contact</a></li>
+             <li class="active"><a href="">Placement</a></li>
+              <li class="active"><a href="{% url 'interview'  %}">Interview section</a></li>
+              <li class="active"><a href="">Resume</a></li>
+            <script>
+                                  function scrollToContactSection() {
+                                           document.getElementById('contact-section').scrollIntoView({
+                                               behavior: 'smooth'
+                                           });
+                                  }
+                              </script>
+          </ul>
+
+          <a href="{% url 'logout' %}" class="btn btn-primary" style="position:relative; left:310px;">
+              <span class="icon-lock"></span>
+              Log Out
+            </a>
+
+          <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
+            <span></span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class=" slider_section" style="align:center; position:relative; top:500px; left:200px;" id="services">
+  <div class="container" style="position:relative; top:400px;">
+    		<div class="row justify-content-center py-5 mt-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Profile</h1>
+            <h2 class="mb-4" style="color:yellow;">Your Profile</h2>
+          </div>
+        </div>
+
+      <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators" >
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1 style="color:white; ">
+                      <span>
+                        Softroniics
+                      </span>
+                    </h1>
+                    <p style="color:white;">
+                     <ul>
+                    <li>Positions: Python Developer</li>
+                    <li>About: Premium training institute in Kerala with 500+ successful placements.</li>
+                    <li>Contact: Softroniics Website</li>
+                  </ul>
+                    </p>
+                    <div class="btn-box">
+                      <a href="{% url 'placement_page' %}" class="btn-1">
+                        Apply Now
+                      </a>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                   <h1 style="color:white;">
+                      Companies <br />
+                      <span>
+                        Optymize
+                      </span>
+                    </h1>
+                    <p style="color:white;">
+                     <ul>
+                    <li>Positions: MERN Stack (ReactJS, Node.js)</li>
+                    <li>About: Specializes in blockchain, cybersecurity, and data science.</li>
+                    <li>Contact: Optymize Blog</li>
+                  </ul>
+                    </p>
+                    <div class="btn-box">
+                      <a href="{% url 'placement_page' %}" class="btn-1">
+                        Apply Now
+                      </a>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1 style="color:white;">
+                      Companies <br />
+                      <span>
+                        Flet.dev
+                      </span>
+                    </h1>
+                    <p style="color:white;">
+                     <ul>
+                    <li>Positions: Flutter Developer</li>
+                    <li>About: Enables real-time web, mobile, and desktop apps using Flutter and Python.</li>
+                    <li>Contact: Flet.dev on Medium</li>
+                  </ul>
+                    </p>
+                    <div class="btn-box">
+                      <a href="{% url 'placement_page' %}" class="btn-1">
+                        Apply Now
+                      </a>
+
+                    </div>                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1 style="color:white;">
+                      Companies <br />
+                      <span>
+                        TechNexa
+                      </span>
+                    </h1>
+                    <p style="color:white;">
+                     <ul>
+                    <li>Positions: Data Scientist</li>
+                    <li>About: Focuses on cutting-edge technologies and industry-ready skills.</li>
+                    <li>Contact: TechNexa Careers</li>
+                  </ul>
+                    </p>
+                    <div class="btn-box">
+                      <a href="{% url 'placement_page' %}" class="btn-1">
+                        Apply Now
+                      </a>
+
+                    </div>                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1 style="color:white;">
+                      Companies <br />
+                      <span>
+                        DigitalCrafts
+                      </span>
+                    </h1>
+                    <p style="color:white;">
+                     <ul>
+                    <li>Positions: Digital Marketing</li>
+                    <li>About: Provides intensive coding bootcamps for tech career transitions.</li>
+                    <li>Contact: DigitalCrafts Careers</li>
+                  </ul>
+                    </p>
+                    <div class="btn-box">
+                      <a href="{% url 'placement_page' %}" class="btn-1">
+                        Apply Now
+                      </a>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+      </div></div></div>
+
+
+  <section id="contact-section">
+  <div class="site-footer">
+
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-3 mr-auto">
+          <div class="widget">
+            <h3>About Us<span class="text-primary">.</span> </h3>
+            <p>E-Learn offers a diverse range of courses, from beginners level courses to professional level courses.<br>Join E-Learn today and unlock your potential!</p>
+          </div> <!-- /.widget -->
+          <div class="widget">
+            <h3>Connect</h3>
+            <ul class="list-unstyled social">
+              <li><a href="#"><span class="icon-instagram"></span></a></li>
+              <li><a href="#"><span class="icon-twitter"></span></a></li>
+              <li><a href="#"><span class="icon-facebook"></span></a></li>
+              <li><a href="#"><span class="icon-linkedin"></span></a></li>
+              <li><a href="#"><span class="icon-pinterest"></span></a></li>
+              <li><a href="#"><span class="icon-dribbble"></span></a></li>
+            </ul>
+          </div> <!-- /.widget -->
+        </div> <!-- /.col-lg-3 -->
+
+
+        <div class="col-lg-3">
+          <div class="widget">
+            <h3>Contact</h3>
+            <address> Company Name: Coding Camp Solutions,
+                123 Virtual Avenue,E-ville, Learningland, United E-states
+             Zip Code: 98765</address>
+            <ul class="list-unstyled links mb-4">
+              <li><a href="tel://11234567890">+1 (555) 123-4567</a></li>
+              <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
+              <li><a href="mailto:info@mydomain.com">Elearn@gmail.com</a></li>
+            </ul>
+          </div> <!-- /.widget -->
+        </div> <!-- /.col-lg-3 -->
+
+      </div> <!-- /.row -->
+
+      <div class="row mt-5">
+        <div class="col-12 text-center">
+          <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co">Elearn.co</a>  Distributed By <a href="https://themewagon.com">Python Developers</a> <!-- License information: https://untree.co/license/ -->
+          </div>
+        </div>
+      </div> <!-- /.container -->
+    </div> <!-- /.site-footer -->
+
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+
+    <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/jquery.animateNumber.min.js' %}"></script>
+    <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'js/jquery.fancybox.min.js' %}"></script>
+    <script src="{% static 'js/jquery.sticky.js' %}"></script>
+    <script src="{% static 'js/aos.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+</section>
+  </body>
+
+  </html>
